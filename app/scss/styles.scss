@@ -1,220 +1,126 @@
-//Helpers
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskannada.css);
-body {
-  font-size: 18px;
-  background-color: #fff;
+@import url(http://fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+
+// font-family: 'Arimo', 'Yellowtail', 'Bree Serif' 'Crete Round', 'Lora', sans-serif;
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
 }
-header {
-  nav {
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      li {
-        display: inline;
-        padding: .5em;
-        a {
-          color: #fff;
-          opacity: .8;
-          &:hover {
-            color: #fff;
-            opacity: 1;
-            text-decoration: none;
-          }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+section.feature {
+  background: url(../img/cloud5.jpg) no-repeat center center;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .hero {
+    text-align: center;
+    color: #51616e;
+    line-height: 5em;
+  }
+  .korean {
+    font-family: 'Jeju Hallasan', sans-serif;
+    font-size: 5em;
+  }
+  .english {
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 5em;
+  }
+  .date {
+    font-size: 1.75em;
+    font-weight: bold;
+  }
+}
+
+section.toheaven {
+  height: 70em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .sidebyside {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sideimage{
+      width: 120em;
+      height: 50em;
+      background: url(../img/52.jpg) no-repeat center center;
+      background-size: cover;
+    }
+    .description {
+      display: flex;
+      justify-content: center;
+      .annotation {
+        width: 50%;
+        margin-left: 10em;
+        font-family: 'Open Sans', serif;
+        .tagline {
+          font-size: 2em;
+          margin-bottom: .5em;
+        }
+        .versetext {
+          font-size: 1.2em;
+          line-height: 1.8em;
+        }
+        .verse {
+          float: right;
+          margin-top:.5em;
         }
       }
     }
   }
 }
-.intro {
-  height: 90vh;
-}
-.background {
-  color: #fff;
-  font-size: 2em;
-  background: url(../img/background.jpg) no-repeat center center;
 
-  //background: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .3) 60%, rgba(255, 255, 255, 1) 95%), url('../img/background.jpg') no-repeat center center;
-  background-size: cover;
-
-
-  flex-direction:row;
-  justify-content: flex-end !important;
-  align-content: center;
-
-  .popper {
-      padding: 1em;
-      border-radius: 5px;
-      align-self: flex-start;
-      text-align: center;
-    .korean{
-      font-family: 'Noto Sans Kannada', sans-serif;
-    //  text-shadow: -1px 2px 6px #000;
-      font-size: 1.4em;
-      font-weight: bold;
-
-      background: linear-gradient(to bottom, #5b2e62, #522f58);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: inline-block;
-    }
-    .english {
-      font-size: 1.3em;
-      line-height: 1em;
-      font-family: 'Yellowtail', cursive;
-
-      background: linear-gradient(to bottom, #5b2e62, #522f58);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: inline-block;
-    }
-  }
-}
-
-section.wallpost {
-  display: flex;
-  flex-direction:row;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.wall {
-  padding: 1em;
-  width: 700px;
-  margin: 0 auto;
-}
-.post {
-  background-color: #e9cefa;
-  padding: 1em;
-  border-radius: 5px;
-  margin-bottom: 1em;
-  .name {
-    font-weight: bold;
-  }
-  .comment {
-    margin-left: 1em;
-    &:before, &:after {
-      content: '"';
-    }
-  }
-}
-.comment {
-
-}
-.wrapper {
-  padding: 1em;
-  width: 700px;
-  margin: 0 auto;
-}
-section.feature {
-  margin: 1em;
-  margin-top: 2em;
-}
-section.center {
-  text-align: center;
-  margin: 1em;
-}
-.aligner {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-content: center;
-}
-.align {
-  display: flex;
-  justify-content: center;
-  &.name {
-    font-weight: bold;
-  }
-}
-.date {
-  margin-bottom: 2em;
-}
-.tribute {
-  height: 20em;
-  border: 5px solid #fff;
-}
-
-footer {
-  margin: 1em;
-  text-align: center;
-}
-.paragraph {
-  width: 1024px;
-  margin: 0 auto;
-  font-family: 'Arimo', sans-serif;
-  font-family: 'Crete Round', serif;
-    font-family: 'Bree Serif', serif;
-/*
-  font-family: 'Bree Serif', serif;
-  font-family: 'Crete Round', serif;
-  */
-}
-.hidden {
-  display: none;
-}
-
-@media screen and (max-width: 1366px) and (min-width: 768px) {
-  .paragraph {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .tribute {
-    height: 15em;
-  }
-  .paragraph {
-    width: 100%;
-  }
-  .wall .post, .wrapper, .wall {
-    width: 100%;
-  }
-  section.wallpost {
-    flex-direction:column;
-    .wall {
-      order: 2;
-    }
-    .comment {
-      order: 1;
-    }
-  }
-
-
-  .background {
-    color: #fff;
-    font-size: 2em;
-    background: url(../img/background.jpg) no-repeat center center;
-
-    background: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .3) 60%, rgba(255, 255, 255, 1) 95%), url('../img/background.jpg') no-repeat center center;
-    background-size: cover;
-    flex-direction:row;
-    justify-content: center !important;
-    align-items: center !important;
-    .popper {
-        background-color: rgba(255,255,255,0.4);
-        padding: 1em;
-        border-radius: 5px;
-        align-self: center;
-      .korean{
-        font-family: 'Noto Sans Kannada', sans-serif;
-        text-shadow: -1px 2px 6px #000;
-        font-size: 1.5em;
-        line-height: 1em;
-
-        background: none;
-        -webkit-background-clip: initial;
-        -webkit-text-fill-color: initial;
-
+@media only screen and (min-width:768px) and (max-width: 1330px)  {
+  section.toheaven {
+    height: 50em;
+    .sidebyside {
+      width: 100%;
+      .sideimage{
+        width: 80em;
+        height: 40em;
+        background: url(../img/52.jpg) no-repeat center center;
+        background-size: cover;
       }
-      .english {
-        font-size: 1.3em;
-        line-height: 1em;
-        font-family: 'Yellowtail', cursive;
-        text-shadow: -1px 2px 6px #000;
+    }
+  }
+}
+// mobile
+@media only screen and (max-width: 768px){
+  section.toheaven {
+    padding: 0em;
+  }
+  section.toheaven {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        background: none;
-        -webkit-background-clip: initial;
-        -webkit-text-fill-color: initial;
+    .sidebyside {
+      width: 100vw;
+      margin: 0 auto;
+      display: block;
+      flex-direction: column;
+      .sideimage{
+        height: 30em;
+        width: 100vw;
+        background: url(../img/52.jpg) no-repeat center center;
+        background-position-y: 25%;
+      }
+      .description {
+        padding: 1em;
+        .annotation {
+          width: 100vw;
+          margin-left: 0em;
+        }
       }
     }
   }

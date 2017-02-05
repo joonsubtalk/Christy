@@ -1,0 +1,221 @@
+//Helpers
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskannada.css);
+body {
+  font-size: 18px;
+  background-color: #fff;
+}
+header {
+  nav {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        display: inline;
+        padding: .5em;
+        a {
+          color: #fff;
+          opacity: .8;
+          &:hover {
+            color: #fff;
+            opacity: 1;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+.intro {
+  height: 90vh;
+}
+.background {
+  color: #fff;
+  font-size: 2em;
+  background: url(../img/background.jpg) no-repeat center center;
+
+  //background: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .3) 60%, rgba(255, 255, 255, 1) 95%), url('../img/background.jpg') no-repeat center center;
+  background-size: cover;
+
+
+  flex-direction:row;
+  justify-content: flex-end !important;
+  align-content: center;
+
+  .popper {
+      padding: 1em;
+      border-radius: 5px;
+      align-self: flex-start;
+      text-align: center;
+    .korean{
+      font-family: 'Noto Sans Kannada', sans-serif;
+    //  text-shadow: -1px 2px 6px #000;
+      font-size: 1.4em;
+      font-weight: bold;
+
+      background: linear-gradient(to bottom, #5b2e62, #522f58);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+    .english {
+      font-size: 1.3em;
+      line-height: 1em;
+      font-family: 'Yellowtail', cursive;
+
+      background: linear-gradient(to bottom, #5b2e62, #522f58);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+  }
+}
+
+section.wallpost {
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.wall {
+  padding: 1em;
+  width: 700px;
+  margin: 0 auto;
+}
+.post {
+  background-color: #e9cefa;
+  padding: 1em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  .name {
+    font-weight: bold;
+  }
+  .comment {
+    margin-left: 1em;
+    &:before, &:after {
+      content: '"';
+    }
+  }
+}
+.comment {
+
+}
+.wrapper {
+  padding: 1em;
+  width: 700px;
+  margin: 0 auto;
+}
+section.feature {
+  margin: 1em;
+  margin-top: 2em;
+}
+section.center {
+  text-align: center;
+  margin: 1em;
+}
+.aligner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+.align {
+  display: flex;
+  justify-content: center;
+  &.name {
+    font-weight: bold;
+  }
+}
+.date {
+  margin-bottom: 2em;
+}
+.tribute {
+  height: 20em;
+  border: 5px solid #fff;
+}
+
+footer {
+  margin: 1em;
+  text-align: center;
+}
+.paragraph {
+  width: 1024px;
+  margin: 0 auto;
+  font-family: 'Arimo', sans-serif;
+  font-family: 'Crete Round', serif;
+    font-family: 'Bree Serif', serif;
+/*
+  font-family: 'Bree Serif', serif;
+  font-family: 'Crete Round', serif;
+  */
+}
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1366px) and (min-width: 768px) {
+  .paragraph {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tribute {
+    height: 15em;
+  }
+  .paragraph {
+    width: 100%;
+  }
+  .wall .post, .wrapper, .wall {
+    width: 100%;
+  }
+  section.wallpost {
+    flex-direction:column;
+    .wall {
+      order: 2;
+    }
+    .comment {
+      order: 1;
+    }
+  }
+
+
+  .background {
+    color: #fff;
+    font-size: 2em;
+    background: url(../img/background.jpg) no-repeat center center;
+
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .3) 60%, rgba(255, 255, 255, 1) 95%), url('../img/background.jpg') no-repeat center center;
+    background-size: cover;
+    flex-direction:row;
+    justify-content: center !important;
+    align-items: center !important;
+    .popper {
+        background-color: rgba(255,255,255,0.4);
+        padding: 1em;
+        border-radius: 5px;
+        align-self: center;
+      .korean{
+        font-family: 'Noto Sans Kannada', sans-serif;
+        text-shadow: -1px 2px 6px #000;
+        font-size: 1.5em;
+        line-height: 1em;
+
+        background: none;
+        -webkit-background-clip: initial;
+        -webkit-text-fill-color: initial;
+
+      }
+      .english {
+        font-size: 1.3em;
+        line-height: 1em;
+        font-family: 'Yellowtail', cursive;
+        text-shadow: -1px 2px 6px #000;
+
+        background: none;
+        -webkit-background-clip: initial;
+        -webkit-text-fill-color: initial;
+      }
+    }
+  }
+}

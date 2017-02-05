@@ -1,195 +1,111 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskannada.css);
-body {
-  font-size: 18px;
-  background-color: #fff; }
+@import url(http://fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box; }
 
-header nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-  header nav ul li {
-    display: inline;
-    padding: .5em; }
-    header nav ul li a {
-      color: #fff;
-      opacity: .8; }
-      header nav ul li a:hover {
-        color: #fff;
-        opacity: 1;
-        text-decoration: none; }
-
-.intro {
-  height: 90vh; }
-
-.background {
-  color: #fff;
-  font-size: 2em;
-  background: url(../img/background.jpg) no-repeat center center;
-  background-size: cover;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-pack: end !important;
-  justify-content: flex-end !important;
-  -ms-flex-line-pack: center;
-  align-content: center; }
-  .background .popper {
-    padding: 1em;
-    border-radius: 5px;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    text-align: center; }
-    .background .popper .korean {
-      font-family: 'Noto Sans Kannada', sans-serif;
-      font-size: 1.4em;
-      font-weight: bold;
-      background: linear-gradient(to bottom, #5b2e62, #522f58);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: inline-block; }
-    .background .popper .english {
-      font-size: 1.3em;
-      line-height: 1em;
-      font-family: 'Yellowtail', cursive;
-      background: linear-gradient(to bottom, #5b2e62, #522f58);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: inline-block; }
-
-section.wallpost {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: start;
-  align-items: flex-start; }
-
-.wall {
-  padding: 1em;
-  width: 700px;
-  margin: 0 auto; }
-
-.post {
-  background-color: #e9cefa;
-  padding: 1em;
-  border-radius: 5px;
-  margin-bottom: 1em; }
-  .post .name {
-    font-weight: bold; }
-  .post .comment {
-    margin-left: 1em; }
-    .post .comment:before, .post .comment:after {
-      content: '"'; }
-
-.wrapper {
-  padding: 1em;
-  width: 700px;
-  margin: 0 auto; }
+*, *:before, *:after {
+  box-sizing: inherit; }
 
 section.feature {
-  margin: 1em;
-  margin-top: 2em; }
-
-section.center {
-  text-align: center;
-  margin: 1em; }
-
-.aligner {
+  background: url(../img/cloud5.jpg) no-repeat center center;
+  background-size: cover;
+  height: 90vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-line-pack: center;
-  align-content: center; }
+  -ms-flex-align: center;
+  align-items: center; }
+  section.feature .hero {
+    text-align: center;
+    color: #51616e;
+    line-height: 5em; }
+  section.feature .korean {
+    font-family: 'Jeju Hallasan', sans-serif;
+    font-size: 5em; }
+  section.feature .english {
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 5em; }
+  section.feature .date {
+    font-size: 1.75em;
+    font-weight: bold; }
 
-.align {
+section.toheaven {
+  height: 70em;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-  justify-content: center; }
-  .align.name {
-    font-weight: bold; }
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  section.toheaven .sidebyside {
+    width: 1280px;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    section.toheaven .sidebyside .sideimage {
+      width: 120em;
+      height: 50em;
+      background: url(../img/52.jpg) no-repeat center center;
+      background-size: cover; }
+    section.toheaven .sidebyside .description {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      section.toheaven .sidebyside .description .annotation {
+        width: 50%;
+        margin-left: 10em;
+        font-family: 'Open Sans', serif; }
+        section.toheaven .sidebyside .description .annotation .tagline {
+          font-size: 2em;
+          margin-bottom: .5em; }
+        section.toheaven .sidebyside .description .annotation .versetext {
+          font-size: 1.2em;
+          line-height: 1.8em; }
+        section.toheaven .sidebyside .description .annotation .verse {
+          float: right;
+          margin-top: .5em; }
 
-.date {
-  margin-bottom: 2em; }
+@media only screen and (min-width: 768px) and (max-width: 1330px) {
+  section.toheaven {
+    height: 50em; }
+    section.toheaven .sidebyside {
+      width: 100%; }
+      section.toheaven .sidebyside .sideimage {
+        width: 80em;
+        height: 40em;
+        background: url(../img/52.jpg) no-repeat center center;
+        background-size: cover; } }
 
-.tribute {
-  height: 20em;
-  border: 5px solid #fff; }
-
-footer {
-  margin: 1em;
-  text-align: center; }
-
-.paragraph {
-  width: 1024px;
-  margin: 0 auto;
-  font-family: 'Arimo', sans-serif;
-  font-family: 'Crete Round', serif;
-  font-family: 'Bree Serif', serif;
-  /*
-  font-family: 'Bree Serif', serif;
-  font-family: 'Crete Round', serif;
-  */ }
-
-.hidden {
-  display: none; }
-
-@media screen and (max-width: 1366px) and (min-width: 768px) {
-  .paragraph {
-    width: 100%; } }
-
-@media screen and (max-width: 768px) {
-  .tribute {
-    height: 15em; }
-  .paragraph {
-    width: 100%; }
-  .wall .post, .wrapper, .wall {
-    width: 100%; }
-  section.wallpost {
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    section.wallpost .wall {
-      -ms-flex-order: 2;
-      order: 2; }
-    section.wallpost .comment {
-      -ms-flex-order: 1;
-      order: 1; }
-  .background {
-    color: #fff;
-    font-size: 2em;
-    background: url(../img/background.jpg) no-repeat center center;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.3) 60%, white 95%), url("../img/background.jpg") no-repeat center center;
-    background-size: cover;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: center !important;
-    justify-content: center !important;
-    -ms-flex-align: center !important;
-    align-items: center !important; }
-    .background .popper {
-      background-color: rgba(255, 255, 255, 0.4);
-      padding: 1em;
-      border-radius: 5px;
-      -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center; }
-      .background .popper .korean {
-        font-family: 'Noto Sans Kannada', sans-serif;
-        text-shadow: -1px 2px 6px #000;
-        font-size: 1.5em;
-        line-height: 1em;
-        background: none;
-        -webkit-background-clip: initial;
-        -webkit-text-fill-color: initial; }
-      .background .popper .english {
-        font-size: 1.3em;
-        line-height: 1em;
-        font-family: 'Yellowtail', cursive;
-        text-shadow: -1px 2px 6px #000;
-        background: none;
-        -webkit-background-clip: initial;
-        -webkit-text-fill-color: initial; } }
+@media only screen and (max-width: 768px) {
+  section.toheaven {
+    padding: 0em; }
+  section.toheaven {
+    height: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    section.toheaven .sidebyside {
+      width: 100vw;
+      margin: 0 auto;
+      display: block;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      section.toheaven .sidebyside .sideimage {
+        height: 30em;
+        width: 100vw;
+        background: url(../img/52.jpg) no-repeat center center;
+        background-position-y: 25%; }
+      section.toheaven .sidebyside .description {
+        padding: 1em; }
+        section.toheaven .sidebyside .description .annotation {
+          width: 100vw;
+          margin-left: 0em; } }
