@@ -13,7 +13,7 @@ html {
 section.feature {
   background: url(../img/cloud5.jpg) no-repeat center center;
   background-size: cover;
-  height: 90vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +59,7 @@ section.toheaven {
       display: flex;
       justify-content: center;
       .annotation {
-        width: 50%;
+        width: 55%;
         margin-left: 10em;
         font-family: 'Open Sans', serif;
         .tagline {
@@ -77,6 +77,76 @@ section.toheaven {
       }
     }
   }
+}
+
+section.growingup {
+  background: #ededed;
+  background-size: cover;
+  height: 150em;
+  .layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    .parallax {
+      z-index: 100;
+      width: 780px;
+      font-size: 1.5em;
+      background-color: #f4f4f4;
+      box-shadow: 0 0 1.2em #c5c5c5;
+      font-family: 'Open Sans', serif;
+      padding: 2em;
+      border: 1em solid #fff;
+      text-align: center;
+    }
+  }
+  .oldpics {
+    position: absolute;
+    background-color: white;
+    padding: 2em;
+    box-shadow: 0 0 1.2em #c5c5c5;
+    &.pic1 {
+      right: 1em;
+      transform: translateX(-30%);
+      top: 100em;
+      height: 40em;
+    }
+    &.pic2 {
+      left: 5%;
+      top: 90em;
+      height: 50em;
+    }
+    &.pic3 {
+      right: 1em;
+      top: 15em;
+      height: 40em;
+    }
+    &.pic4 {
+      right: 25%;
+      top: 20em;
+      height: 60em;
+    }
+    &.pic5 {
+      left: 10%;
+      top: 10em;
+      height: 30em;
+    }
+    &.pic6 {
+      left: 30%;
+      transform: translateX(50%);
+      top: 55em;
+      height: 40em;
+    }
+  }
+}
+.test {
+  position: fixed;
+  top:0;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  z-index: 1;
 }
 
 @media only screen and (min-width:768px) and (max-width: 1330px)  {
@@ -121,6 +191,68 @@ section.toheaven {
           width: 100vw;
           margin-left: 0em;
         }
+      }
+    }
+  }
+  section.growingup {
+    height: 200em;
+    .layout {
+      position: relative;
+      flex-direction: column-reverse;
+      .parallax {
+        z-index: 100;
+        width: 100%;
+        font-size: 1.2em;
+        line-height: 2em;
+        padding: 1em;
+        text-align: center;
+      }
+    }
+    .oldpics {
+      position: relative;
+      width: 100%;
+      height: auto;
+      &.pic1 {
+        left: 0;
+        top: 0;
+        height: auto;
+        width: 100%;
+        transform: none;
+      }
+      &.pic2 {
+        left: 0;
+        top: 0;
+        height: auto;
+        width: 100%;
+        transform: none;
+      }
+      &.pic3 {
+        left: 0;
+        top: 0;
+        height: auto;
+        width: 100%;
+        transform: none;
+      }
+      &.pic4 {
+        left: 0;
+        top: 0;
+        height: auto;
+        width: 100%;
+        transform: none;
+      }
+      &.pic5 {
+        left: 0;
+        top: 0;
+        height: auto;
+        width: 100%;
+        transform: none;
+      }
+      &.pic6 {
+        left: 0;
+        top: 0;
+        height: auto;
+        width: 100%;
+        transform: none;
       }
     }
   }

@@ -9,7 +9,7 @@ html {
 section.feature {
   background: url(../img/cloud5.jpg) no-repeat center center;
   background-size: cover;
-  height: 90vh;
+  height: 85vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -58,7 +58,7 @@ section.toheaven {
       -ms-flex-pack: center;
       justify-content: center; }
       section.toheaven .sidebyside .description .annotation {
-        width: 50%;
+        width: 55%;
         margin-left: 10em;
         font-family: 'Open Sans', serif; }
         section.toheaven .sidebyside .description .annotation .tagline {
@@ -70,6 +70,69 @@ section.toheaven {
         section.toheaven .sidebyside .description .annotation .verse {
           float: right;
           margin-top: .5em; }
+
+section.growingup {
+  background: #ededed;
+  background-size: cover;
+  height: 150em; }
+  section.growingup .layout {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    position: relative; }
+    section.growingup .layout .parallax {
+      z-index: 100;
+      width: 780px;
+      font-size: 1.5em;
+      background-color: #f4f4f4;
+      box-shadow: 0 0 1.2em #c5c5c5;
+      font-family: 'Open Sans', serif;
+      padding: 2em;
+      border: 1em solid #fff;
+      text-align: center; }
+  section.growingup .oldpics {
+    position: absolute;
+    background-color: white;
+    padding: 2em;
+    box-shadow: 0 0 1.2em #c5c5c5; }
+    section.growingup .oldpics.pic1 {
+      right: 1em;
+      transform: translateX(-30%);
+      top: 100em;
+      height: 40em; }
+    section.growingup .oldpics.pic2 {
+      left: 5%;
+      top: 90em;
+      height: 50em; }
+    section.growingup .oldpics.pic3 {
+      right: 1em;
+      top: 15em;
+      height: 40em; }
+    section.growingup .oldpics.pic4 {
+      right: 25%;
+      top: 20em;
+      height: 60em; }
+    section.growingup .oldpics.pic5 {
+      left: 10%;
+      top: 10em;
+      height: 30em; }
+    section.growingup .oldpics.pic6 {
+      left: 30%;
+      transform: translateX(50%);
+      top: 55em;
+      height: 40em; }
+
+.test {
+  position: fixed;
+  top: 0;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  z-index: 1; }
 
 @media only screen and (min-width: 768px) and (max-width: 1330px) {
   section.toheaven {
@@ -108,4 +171,57 @@ section.toheaven {
         padding: 1em; }
         section.toheaven .sidebyside .description .annotation {
           width: 100vw;
-          margin-left: 0em; } }
+          margin-left: 0em; }
+  section.growingup {
+    height: 200em; }
+    section.growingup .layout {
+      position: relative;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse; }
+      section.growingup .layout .parallax {
+        z-index: 100;
+        width: 100%;
+        font-size: 1.2em;
+        line-height: 2em;
+        padding: 1em;
+        text-align: center; }
+    section.growingup .oldpics {
+      position: relative;
+      width: 100%;
+      height: auto; }
+      section.growingup .oldpics.pic1 {
+        left: 0;
+        top: 0;
+        height: auto;
+        width: 100%;
+        transform: none; }
+      section.growingup .oldpics.pic2 {
+        left: 0;
+        top: 0;
+        height: auto;
+        width: 100%;
+        transform: none; }
+      section.growingup .oldpics.pic3 {
+        left: 0;
+        top: 0;
+        height: auto;
+        width: 100%;
+        transform: none; }
+      section.growingup .oldpics.pic4 {
+        left: 0;
+        top: 0;
+        height: auto;
+        width: 100%;
+        transform: none; }
+      section.growingup .oldpics.pic5 {
+        left: 0;
+        top: 0;
+        height: auto;
+        width: 100%;
+        transform: none; }
+      section.growingup .oldpics.pic6 {
+        left: 0;
+        top: 0;
+        height: auto;
+        width: 100%;
+        transform: none; } }
