@@ -6,6 +6,15 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+/* mixins */
+.versetext {
+  font-size: 1.2em;
+  line-height: 1.8em; }
+
+.verse {
+  float: right;
+  margin-top: .5em; }
+
 section.feature {
   background: url(../img/cloud5.jpg) no-repeat center center;
   background-size: cover;
@@ -64,17 +73,11 @@ section.toheaven {
         section.toheaven .sidebyside .description .annotation .tagline {
           font-size: 2em;
           margin-bottom: .5em; }
-        section.toheaven .sidebyside .description .annotation .versetext {
-          font-size: 1.2em;
-          line-height: 1.8em; }
-        section.toheaven .sidebyside .description .annotation .verse {
-          float: right;
-          margin-top: .5em; }
 
 section.growingup {
   background: #ededed;
   background-size: cover;
-  height: 150em; }
+  height: 130em; }
   section.growingup .layout {
     display: -ms-flexbox;
     display: flex;
@@ -94,11 +97,25 @@ section.growingup {
       padding: 2em;
       border: 1em solid #fff;
       text-align: center; }
+  section.growingup .floatingVerse {
+    position: absolute;
+    width: 40%;
+    right: 5em;
+    top: 100em;
+    padding: 2em;
+    background-color: #fff; }
   section.growingup .oldpics {
     position: absolute;
     background-color: white;
     padding: 2em;
-    box-shadow: 0 0 1.2em #c5c5c5; }
+    box-shadow: 0 0 1.2em #c5c5c5;
+    /*
+    &.pic3 {
+      right: 20em;
+      top: 150em;
+      height: 60em;
+    }
+    */ }
     section.growingup .oldpics.pic1 {
       right: 1em;
       transform: translateX(-30%);
@@ -108,10 +125,6 @@ section.growingup {
       left: 5%;
       top: 90em;
       height: 50em; }
-    section.growingup .oldpics.pic3 {
-      right: 1em;
-      top: 15em;
-      height: 40em; }
     section.growingup .oldpics.pic4 {
       right: 25%;
       top: 20em;
@@ -124,7 +137,19 @@ section.growingup {
       left: 30%;
       transform: translateX(50%);
       top: 55em;
-      height: 40em; }
+      height: 30em; }
+
+section.verseBreak {
+  background-color: #efefef; }
+
+section.america {
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .test {
   position: fixed;
@@ -133,6 +158,18 @@ section.growingup {
   color: white;
   padding: 1em;
   z-index: 1; }
+
+section.bible {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  section.bible div {
+    margin: 2em;
+    font-size: 1.5em;
+    width: 20em;
+    padding: 1em;
+    background-color: #ededed; }
 
 @media only screen and (min-width: 768px) and (max-width: 1330px) {
   section.toheaven {
@@ -185,6 +222,14 @@ section.growingup {
         line-height: 2em;
         padding: 1em;
         text-align: center; }
+    section.growingup .floatingVerse {
+      position: relative;
+      width: 100%;
+      height: auto;
+      top: 0;
+      left: 0;
+      background: #3c3c3c;
+      color: white; }
     section.growingup .oldpics {
       position: relative;
       width: 100%;

@@ -10,6 +10,17 @@ html {
   box-sizing: inherit;
 }
 
+/* mixins */
+
+.versetext {
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+.verse {
+  float: right;
+  margin-top:.5em;
+}
+
 section.feature {
   background: url(../img/cloud5.jpg) no-repeat center center;
   background-size: cover;
@@ -66,14 +77,6 @@ section.toheaven {
           font-size: 2em;
           margin-bottom: .5em;
         }
-        .versetext {
-          font-size: 1.2em;
-          line-height: 1.8em;
-        }
-        .verse {
-          float: right;
-          margin-top:.5em;
-        }
       }
     }
   }
@@ -82,7 +85,7 @@ section.toheaven {
 section.growingup {
   background: #ededed;
   background-size: cover;
-  height: 150em;
+  height: 130em;
   .layout {
     display: flex;
     justify-content: center;
@@ -101,6 +104,14 @@ section.growingup {
       text-align: center;
     }
   }
+  .floatingVerse {
+    position: absolute;
+    width: 40%;
+    right: 5em;
+    top: 100em;
+    padding: 2em;
+    background-color: #fff;
+  }
   .oldpics {
     position: absolute;
     background-color: white;
@@ -117,11 +128,13 @@ section.growingup {
       top: 90em;
       height: 50em;
     }
+    /*
     &.pic3 {
-      right: 1em;
-      top: 15em;
-      height: 40em;
+      right: 20em;
+      top: 150em;
+      height: 60em;
     }
+    */
     &.pic4 {
       right: 25%;
       top: 20em;
@@ -136,9 +149,18 @@ section.growingup {
       left: 30%;
       transform: translateX(50%);
       top: 55em;
-      height: 40em;
+      height: 30em;
     }
   }
+}
+section.verseBreak {
+  background-color: #efefef;
+}
+section.america {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .test {
   position: fixed;
@@ -148,7 +170,17 @@ section.growingup {
   padding: 1em;
   z-index: 1;
 }
-
+section.bible {
+  display: flex;
+  flex-wrap: wrap;
+  div {
+    margin: 2em;
+    font-size: 1.5em;
+    width: 20em;
+    padding: 1em;
+    background-color: #ededed;
+  }
+}
 @media only screen and (min-width:768px) and (max-width: 1330px)  {
   section.toheaven {
     height: 50em;
@@ -207,6 +239,15 @@ section.growingup {
         padding: 1em;
         text-align: center;
       }
+    }
+    .floatingVerse {
+      position: relative;
+      width: 100%;
+      height: auto;
+      top: 0;
+      left: 0;
+      background: #3c3c3c;
+      color: white;
     }
     .oldpics {
       position: relative;
