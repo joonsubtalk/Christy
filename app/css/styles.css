@@ -16,7 +16,7 @@ html {
   margin-top: .5em; }
 
 section.feature {
-  background: url(../img/cloud5.jpg) no-repeat center center;
+  background: url(../img/cloud5.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 85vh;
   display: -ms-flexbox;
@@ -140,16 +140,55 @@ section.growingup {
       height: 30em; }
 
 section.verseBreak {
-  background-color: #efefef; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2em;
+  height: 30em;
+  color: #fff;
+  background-color: #a179a9;
+  font-size: 1.2em;
+  line-height: 1.8em; }
 
 section.america {
-  height: 100vh;
+  height: 95em;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-align: center;
   align-items: center; }
+  section.america .layout {
+    position: relative;
+    width: 1280px; }
+    section.america .layout .part1 {
+      position: absolute;
+      top: -20em;
+      left: 10em;
+      width: 26%;
+      font-size: 1.2em;
+      line-height: 1.8em; }
+    section.america .layout .part2 {
+      position: absolute;
+      top: 23em;
+      left: 54em;
+      width: 26%;
+      font-size: 1.2em;
+      line-height: 1.8em; }
+    section.america .layout .pics {
+      position: absolute;
+      box-shadow: 0 0 10em #868686; }
+      section.america .layout .pics.pic1 {
+        top: -38em;
+        left: 45em;
+        height: 55em; }
+      section.america .layout .pics.pic2 {
+        top: 0em;
+        left: 5em;
+        height: 40em; }
 
 .test {
   position: fixed;
