@@ -9,7 +9,8 @@ html {
 /* mixins */
 .versetext {
   font-size: 1.2em;
-  line-height: 1.8em; }
+  line-height: 1.8em;
+  font-family: 'Open Sans', serif; }
 
 .verse {
   float: right;
@@ -97,9 +98,12 @@ section.growingup {
       padding: 2em;
       border: 1em solid #fff;
       text-align: center; }
+      section.growingup .layout .parallax .tagline {
+        font-size: 1.5em;
+        margin-bottom: .5em; }
   section.growingup .floatingVerse {
     position: absolute;
-    width: 40%;
+    width: 40em;
     right: 5em;
     top: 100em;
     padding: 2em;
@@ -108,34 +112,25 @@ section.growingup {
     position: absolute;
     background-color: white;
     padding: 2em;
-    box-shadow: 0 0 1.2em #c5c5c5;
-    /*
-    &.pic3 {
-      right: 20em;
-      top: 150em;
-      height: 60em;
-    }
-    */ }
+    box-shadow: 0 0 1.2em #c5c5c5; }
     section.growingup .oldpics.pic1 {
-      right: 1em;
-      transform: translateX(-30%);
-      top: 100em;
+      right: 17%;
+      top: 90em;
       height: 40em; }
     section.growingup .oldpics.pic2 {
-      left: 5%;
+      left: 12%;
       top: 90em;
-      height: 50em; }
+      height: 40em; }
     section.growingup .oldpics.pic4 {
-      right: 25%;
+      right: 2%;
       top: 20em;
       height: 60em; }
     section.growingup .oldpics.pic5 {
-      left: 10%;
+      left: 15%;
       top: 10em;
       height: 30em; }
     section.growingup .oldpics.pic6 {
-      left: 30%;
-      transform: translateX(50%);
+      left: 5%;
       top: 55em;
       height: 30em; }
 
@@ -154,7 +149,7 @@ section.verseBreak {
   line-height: 1.8em; }
 
 section.america {
-  height: 95em;
+  height: 150em;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -166,28 +161,44 @@ section.america {
     width: 1280px; }
     section.america .layout .part1 {
       position: absolute;
-      top: -20em;
-      left: 10em;
-      width: 26%;
+      top: -35em;
+      left: 0em;
+      width: 32%;
       font-size: 1.2em;
-      line-height: 1.8em; }
+      line-height: 1.8em;
+      font-family: 'Open Sans', serif; }
+      section.america .layout .part1 .tagline {
+        font-size: 2em;
+        margin-bottom: .5em; }
     section.america .layout .part2 {
       position: absolute;
-      top: 23em;
-      left: 54em;
+      top: 3em;
+      left: 57em;
       width: 26%;
       font-size: 1.2em;
-      line-height: 1.8em; }
+      line-height: 1.8em;
+      font-family: 'Open Sans', serif; }
+      section.america .layout .part2 .tagline {
+        font-size: 2em;
+        margin-bottom: .5em; }
     section.america .layout .pics {
       position: absolute;
-      box-shadow: 0 0 10em #868686; }
+      box-shadow: 0 0 10em #969696; }
+      section.america .layout .pics.pic0 {
+        height: 50em;
+        top: -66em;
+        left: 38.55em; }
       section.america .layout .pics.pic1 {
-        top: -38em;
-        left: 45em;
-        height: 55em; }
+        top: -40em;
+        left: 56em;
+        height: 30em; }
       section.america .layout .pics.pic2 {
-        top: 0em;
+        top: -16em;
         left: 5em;
+        height: 40em; }
+      section.america .layout .pics.pic3 {
+        top: 24em;
+        left: 22.2em;
         height: 40em; }
 
 .test {
@@ -197,6 +208,29 @@ section.america {
   color: white;
   padding: 1em;
   z-index: 1; }
+
+section.passing {
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  section.passing .remarks {
+    display: -ms-flexbox;
+    display: flex; }
+    section.passing .remarks .obi {
+      margin-right: 3em; }
+      section.passing .remarks .obi .side-image {
+        height: 20em; }
+  section.passing .excerpt {
+    width: 640px;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    padding: 2em .5em;
+    font-size: 1.2em;
+    line-height: 1.8em; }
 
 section.bible {
   display: -ms-flexbox;
@@ -209,6 +243,70 @@ section.bible {
     width: 20em;
     padding: 1em;
     background-color: #ededed; }
+
+section.imageView {
+  height: 45em;
+  color: #333;
+  background-color: #f5f5f5;
+  overflow: hidden; }
+  section.imageView .wrap {
+    width: 1330px;
+    margin: 0 auto; }
+  section.imageView .box {
+    display: inline;
+    overflow: hidden;
+    width: 50%;
+    float: left; }
+    section.imageView .box .bigimage {
+      padding: 1em;
+      height: 45em; }
+    section.imageView .box .pics {
+      display: block;
+      float: left;
+      width: 70%;
+      height: 45em;
+      overflow: hidden;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      section.imageView .box .pics .pic {
+        height: 50%;
+        overflow: hidden; }
+        section.imageView .box .pics .pic .image {
+          width: 100%;
+          padding: 1em; }
+    section.imageView .box .text {
+      float: left;
+      padding: 1em; }
+
+section.heart {
+  color: white;
+  height: 50vh; }
+  section.heart .list .pics {
+    height: 20em; }
+  section.heart .imageSlider {
+    width: 39em;
+    height: 30em;
+    overflow: hidden;
+    position: relative; }
+    section.heart .imageSlider .slider {
+      position: absolute;
+      transition: 1s all ease; }
+      section.heart .imageSlider .slider.current {
+        transform: translateX(0); }
+      section.heart .imageSlider .slider.temp {
+        transform: translateX(39em); }
+      section.heart .imageSlider .slider img {
+        height: 30em; }
+    section.heart .imageSlider.transition .slider.current {
+      transform: translateX(-39em); }
+    section.heart .imageSlider.transition .slider.temp {
+      transform: translateX(0); }
+
+section.hi {
+  background-color: red;
+  height: 50vh; }
 
 @media only screen and (min-width: 768px) and (max-width: 1330px) {
   section.toheaven {
@@ -280,7 +378,7 @@ section.bible {
         width: 100%;
         transform: none; }
       section.growingup .oldpics.pic2 {
-        left: 0;
+        left: 15%;
         top: 0;
         height: auto;
         width: 100%;

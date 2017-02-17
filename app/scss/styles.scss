@@ -15,6 +15,7 @@ html {
 .versetext {
   font-size: 1.2em;
   line-height: 1.8em;
+  font-family: 'Open Sans', serif;
 }
 .verse {
   float: right;
@@ -70,13 +71,13 @@ section.toheaven {
       display: flex;
       justify-content: center;
       .annotation {
-        width: 55%;
-        margin-left: 10em;
-        font-family: 'Open Sans', serif;
         .tagline {
           font-size: 2em;
           margin-bottom: .5em;
         }
+        width: 55%;
+        margin-left: 10em;
+        font-family: 'Open Sans', serif;
       }
     }
   }
@@ -93,6 +94,10 @@ section.growingup {
     height: 100%;
     position: relative;
     .parallax {
+      .tagline {
+        font-size: 1.5em;
+        margin-bottom: .5em;
+      }
       z-index: 100;
       width: 780px;
       font-size: 1.5em;
@@ -106,7 +111,7 @@ section.growingup {
   }
   .floatingVerse {
     position: absolute;
-    width: 40%;
+    width: 40em;
     right: 5em;
     top: 100em;
     padding: 2em;
@@ -118,36 +123,28 @@ section.growingup {
     padding: 2em;
     box-shadow: 0 0 1.2em #c5c5c5;
     &.pic1 {
-      right: 1em;
-      transform: translateX(-30%);
-      top: 100em;
+      right: 17%;
+//      transform: translateX(30%);
+      top: 90em;
       height: 40em;
     }
     &.pic2 {
-      left: 5%;
+      left: 12%;
       top: 90em;
-      height: 50em;
+      height: 40em;
     }
-    /*
-    &.pic3 {
-      right: 20em;
-      top: 150em;
-      height: 60em;
-    }
-    */
     &.pic4 {
-      right: 25%;
+      right: 2%;
       top: 20em;
       height: 60em;
     }
     &.pic5 {
-      left: 10%;
+      left: 15%;
       top: 10em;
       height: 30em;
     }
     &.pic6 {
-      left: 30%;
-      transform: translateX(50%);
+      left: 5%;
       top: 55em;
       height: 30em;
     }
@@ -164,8 +161,9 @@ section.verseBreak {
   font-size: 1.2em;
   line-height: 1.8em;
 }
+
 section.america {
-  height: 95em;
+  height: 150em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,31 +172,51 @@ section.america {
     width: 1280px;
     .part1 {
       position: absolute;
-      top: -20em;
-      left: 10em;
-      width: 26%;
+      top: -35em;
+      left: 0em;
+      width: 32%;
       font-size: 1.2em;
       line-height: 1.8em;
+      font-family: 'Open Sans', serif;
+      .tagline {
+        font-size: 2em;
+        margin-bottom: .5em;
+      }
     }
     .part2 {
       position: absolute;
-      top: 23em;
-      left: 54em;
+      top: 3em;
+      left: 57em;
       width: 26%;
       font-size: 1.2em;
       line-height: 1.8em;
+      font-family: 'Open Sans', serif;
+      .tagline {
+        font-size: 2em;
+        margin-bottom: .5em;
+      }
     }
     .pics {
       position: absolute;
-      box-shadow: 0 0 10em #868686;
+      box-shadow: 0 0 10em #969696;
+      &.pic0 {
+        height: 50em;
+        top: -66em;
+        left: 38.55em;
+      }
       &.pic1 {
-        top: -38em;
-        left: 45em;
-        height: 55em;
+        top: -40em;
+        left: 56em;
+        height: 30em;
       }
       &.pic2 {
-        top: 0em;
+        top: -16em;
         left: 5em;
+        height: 40em;
+      }
+      &.pic3 {
+        top: 24em;
+        left: 22.2em;
         height: 40em;
       }
     }
@@ -212,6 +230,30 @@ section.america {
   padding: 1em;
   z-index: 1;
 }
+
+section.passing {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .remarks {
+    display: flex;
+    .obi {
+      margin-right: 3em;
+      .side-image {
+        height: 20em;
+      }
+    }
+  }
+  .excerpt {
+    width: 640px;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    padding: 2em .5em;
+    font-size: 1.2em;
+    line-height: 1.8em;
+  }
+}
 section.bible {
   display: flex;
   flex-wrap: wrap;
@@ -222,6 +264,90 @@ section.bible {
     padding: 1em;
     background-color: #ededed;
   }
+}
+section.imageView {
+  height: 45em;
+  color: #333;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  .wrap {
+    width: 1330px;
+    margin: 0 auto;
+  }
+  .box {
+    display: inline;
+    overflow: hidden;
+    width:50%;
+    float: left;
+
+    .bigimage {
+      padding: 1em;
+      height: 45em;
+    }
+    .pics {
+      display: block;
+      float: left;
+      width: 70%;
+      height: 45em;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      .pic {
+        height: 50%;
+        overflow: hidden;
+        .image{
+          width: 100%;
+          padding: 1em;
+        }
+      }
+    }
+    .text{
+      float: left;
+      padding: 1em;
+    }
+  }
+}
+section.heart {
+  color: white;
+  height: 50vh;
+  .list {
+    .pics{
+      height: 20em;
+    }
+  }
+  $sliderWidth: 39em;
+  $sliderHeight: 30em;
+  .imageSlider {
+    width: $sliderWidth;
+    height: $sliderHeight;
+    overflow: hidden;
+    position: relative;
+    .slider {
+      position: absolute;
+      transition: 1s all ease;
+      &.current {
+        transform: translateX(0);
+      }
+      &.temp {
+        transform: translateX($sliderWidth);
+      }
+      img {
+        height: $sliderHeight;
+      }
+    }
+    &.transition .slider{
+      &.current {
+        transform: translateX(-$sliderWidth);
+      }
+      &.temp {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+section.hi {
+  background-color: red;
+  height: 50vh;
 }
 @media only screen and (min-width:768px) and (max-width: 1330px)  {
   section.toheaven {
@@ -303,7 +429,7 @@ section.bible {
         transform: none;
       }
       &.pic2 {
-        left: 0;
+        left: 15%;
         top: 0;
         height: auto;
         width: 100%;
