@@ -47,9 +47,41 @@ $( window ).resize(function() {
 });
 
 setInterval(function(){
-  $("#imageSlider").toggleClass("transition");
+  var node = $("#imageSlider1");
+  node.toggleClass("transition");
   setTimeout(function(){
-    $("#pic2").css('transition', 'none');
-    $("#imageSlider").toggleClass("transition");
-  },4000)
-},8000);
+    node.toggleClass("transition");
+  },timer/2)
+},timer = getRandomArbitrary(3000,9000));
+
+setInterval(function(){
+  var timer = getRandomArbitrary(3000,9000);
+  var node = $("#imageSlider2");
+  node.toggleClass("transition");
+  setTimeout(function(){
+    node.toggleClass("transition");
+  },timer/2)
+},timer = getRandomArbitrary(3000,9000));
+
+setInterval(function(){
+  var timer = getRandomArbitrary(3000,9000);
+  var node = $("#imageSlider3");
+  node.toggleClass("transition");
+  setTimeout(function(){
+    node.toggleClass("transition");
+  },timer/2)
+},timer = getRandomArbitrary(3000,9000));
+
+setInterval(function(){
+  var timer = getRandomArbitrary(3000,9000);
+  var node = $("#imageSlider4");
+  node.toggleClass("transition");
+  setTimeout(function(){
+    node.toggleClass("transition");
+  },timer/2)
+},timer = getRandomArbitrary(3000,9000));
+
+// Helper
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+}

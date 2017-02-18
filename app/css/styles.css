@@ -281,15 +281,17 @@ section.imageView {
       padding: 1em; }
 
 section.heart {
+  background-color: black;
   color: white;
-  height: 50vh; }
+  height: 150em; }
   section.heart .list .pics {
     height: 20em; }
   section.heart .imageSlider {
     width: 39em;
     height: 30em;
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    margin-bottom: 2em; }
     section.heart .imageSlider .slider {
       position: absolute;
       transition: 1s all ease; }
@@ -303,10 +305,6 @@ section.heart {
       transform: translateX(-39em); }
     section.heart .imageSlider.transition .slider.temp {
       transform: translateX(0); }
-
-section.hi {
-  background-color: red;
-  height: 50vh; }
 
 @media only screen and (min-width: 768px) and (max-width: 1330px) {
   section.toheaven {

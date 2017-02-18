@@ -308,8 +308,9 @@ section.imageView {
   }
 }
 section.heart {
+  background-color: black;
   color: white;
-  height: 50vh;
+  height: 150em;
   .list {
     .pics{
       height: 20em;
@@ -322,6 +323,7 @@ section.heart {
     height: $sliderHeight;
     overflow: hidden;
     position: relative;
+    margin-bottom: 2em;
     .slider {
       position: absolute;
       transition: 1s all ease;
@@ -344,10 +346,6 @@ section.heart {
       }
     }
   }
-}
-section.hi {
-  background-color: red;
-  height: 50vh;
 }
 @media only screen and (min-width:768px) and (max-width: 1330px)  {
   section.toheaven {
