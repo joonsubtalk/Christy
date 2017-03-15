@@ -1,10 +1,11 @@
 //
 var win = $(window);
+/*
 $(window).scroll(function () {
     //You've scrolled this much:
        $('#test').text("You've scrolled " + win.scrollTop() + " pixels");
 });
-
+*/
 var isMobile = false; //initiate as false
 var tooSmall = false; //initiate as false
 // device detection
@@ -26,11 +27,10 @@ $(window).scroll(function() {
      isParallax = false;
    }
    if (isParallax && !isMobile && !tooSmall) {
-     console.log("ASDF")
-     $("#pic4").css('transform', 'translateY(-' + wS/6+ 'px)');
-     $("#pic1").css('transform', 'translateY(-' + wS/3+ 'px)');
 
      /*
+     $("#pic4").css('transform', 'translateY(-' + wS/6+ 'px)');
+     $("#pic1").css('transform', 'translateY(-' + wS/3+ 'px)');
       $("#pic2").css('transform', 'translateY(-' + wS/12+ 'px)');
      $("#pic3").css('transform', 'translateY(-' + (wS/100)+ 'px)');
       $("#pic5").css('transform', 'translateY(-' + wS/100+ 'px)');

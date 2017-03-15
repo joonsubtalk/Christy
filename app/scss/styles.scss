@@ -16,6 +16,7 @@ html {
   font-size: 1.2em;
   line-height: 1.8em;
   font-family: 'Open Sans', serif;
+  width: 50%;
 }
 .verse {
   float: right;
@@ -75,6 +76,9 @@ section.toheaven {
           font-size: 2em;
           margin-bottom: .5em;
         }
+        .versetext {
+          width:100%;
+        }
         width: 55%;
         margin-left: 10em;
         font-family: 'Open Sans', serif;
@@ -86,7 +90,7 @@ section.toheaven {
 section.growingup {
   background: #ededed;
   background-size: cover;
-  height: 130em;
+  height: 120em;
   .layout {
     display: flex;
     justify-content: center;
@@ -123,29 +127,44 @@ section.growingup {
     padding: 2em;
     box-shadow: 0 0 1.2em #c5c5c5;
     &.pic1 {
-      right: 17%;
-//      transform: translateX(30%);
-      top: 90em;
-      height: 40em;
-    }
-    &.pic2 {
-      left: 12%;
-      top: 90em;
-      height: 40em;
-    }
-    &.pic4 {
-      right: 2%;
-      top: 20em;
-      height: 60em;
-    }
-    &.pic5 {
-      left: 15%;
-      top: 10em;
+      right: 8%;
+      top: 84em;
       height: 30em;
     }
+    // bot friend
+    &.pic2 {
+      left: 15%;
+      top: 75em;
+      height: 30em;
+    }
+    // mid france
+    &.pic3 {
+      left: 2%;
+      top: 41em;
+      height: 30em;
+    }
+    // top london
+    &.pic4 {
+      left: 66%;
+      top: 6em;
+      height: 40em;
+    }
+    // top JR
+    &.pic5 {
+      left: 4%;//8em;
+      top: 7em;
+      height: 30em;
+    }
+    // top highschool
     &.pic6 {
-      left: 5%;
-      top: 55em;
+      left: 32%;//35em;
+      top: 15em;
+      height: 30em;
+    }
+    // mid eif
+    &.pic7 {
+      right: 2%;
+      top: 50em;
       height: 30em;
     }
   }
@@ -158,6 +177,7 @@ section.verseBreak {
   height: 30em;
   color: #fff;
   background-color: #a179a9;
+  background: linear-gradient(to left, #42275a , #734b6d);
   font-size: 1.2em;
   line-height: 1.8em;
 }
@@ -266,62 +286,499 @@ section.bible {
   }
 }
 section.heart {
-  background-color: black;
-  color: white;
-  height: 75em;
+  background: url(../img/cloud3.jpg) no-repeat center center fixed;
+  color: #624c4c;
+  height: 95em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  .overlaypic {
+    height: 35em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, 10%);
+    box-shadow: 0 0 3em 2px #9d9d96;
+  }
   .summary {
-    height: 75em;
     display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top:-25em;
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
     .text {
+      padding-right: 8em;
       .title {
         font-size: 2em;
         margin-bottom: .5em;
       }
-      width: 20em;
-      margin-right: 3em;
+      width: 30em;
       font-size: 1.2em;
       line-height: 1.8em;
       font-family: 'Open Sans', serif;
     }
-    .bakeimg .pics {
-      height: 40em;
-    }
-  }
-  .bottom {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    .support img{
-      height: 20em;
+    .pics {
+      height: 47em;
+      box-shadow: 0 0 3em 2px #9d9d96;
     }
   }
 }
-@media only screen and (min-width:768px) and (max-width: 1330px)  {
+section.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e6e7;
+  height: 12em;
+  div.content{
+    border-left: solid 6px #6f8bae;
+    padding-left:1em
+  }
+}
+section.eulogy {
+  background: url(../img/background.jpg) no-repeat center center;
+  height: 80vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .text {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    font-family: 'Open Sans', serif;
+    background-color: #fff;
+    padding: 3em;
+    border-radius: 10px;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+  color: #fff;
+  background-color: #2e2e2e;
+}
+@media only screen and (min-width:768px) and (max-width: 1410px)  {
+  section.verseBreak {
+    height: 20em;
+    .versetext {
+      width: 75%;
+    }
+  }
   section.toheaven {
     height: 50em;
     .sidebyside {
       width: 100%;
+      padding: 2em;
+      .description .annotation {
+        margin-left: 2em;
+        width: 61%;
+      }
       .sideimage{
-        width: 80em;
-        height: 40em;
+        width: 97em;
+        height: 42em;
         background: url(../img/52.jpg) no-repeat center center;
         background-size: cover;
       }
     }
   }
+  section.growingup {
+    height: 100em;
+    .layout {
+      .parallax {
+        padding: 1em;
+        width: 700px;
+        text-align: justify;
+      }
+    }
+    .oldpics {
+      // bot selfie
+      padding: 1em;
+      &.pic1 {
+        right: 8%;
+        top: 70em;
+        height: 26em;
+      }
+      // bot friend
+      &.pic2 {
+        left: 5%;
+        top: 66em;
+        height: 26em;
+        z-index: 50;
+      }
+      // mid france
+      &.pic3 {
+        left: 1%;
+        top: 40em;
+        height: 28em;
+      }
+      // top london
+      &.pic4 {
+        right: 5%;
+        left: auto;
+        top: 5em;
+        height: 30em;
+      }
+      // top JR
+      &.pic5 {
+        left: 3%;//8em;
+        top: 3em;
+        height: 28em;
+      }
+      // top highschool
+      &.pic6 {
+        left: 35%;//35em;
+        top: 15em;
+        height: 28em;
+      }
+      // mid eif
+      &.pic7 {
+        right: 2%;
+        top: 40em;
+        height: 33em;
+      }
+    }
+  }
+  section.america {
+    height: 90em;
+    .layout {
+      width: 940px;
+      .part0 {
+        .pics {
+          box-shadow: 0 0 2em #969696;
+          &.pic0 {
+            left: 43.6em;
+            height: 35em;
+            top: -39em;
+          }
+          &.pic1 {
+            left: 39.7em;
+            height: 21.8em;
+            top: -4.1em;
+          }
+          &.pic2 {
+            left: 4em;
+            height: 31em;
+            top: -13.3em;
+          }
+          &.pic3 {
+            left: 4em;
+            height: 20em;
+            top: 17.7em;
+            z-index: 300;
+          }
+        }
+      }
+      .part1 {
+        left: 14%;
+        top: -30em;
+        max-width: 30em;
+        width: 37%;
+      }
+      .part2 {
+        top: 22em;
+        left: 36em;
+        width: 30%;
+      }
+    }
+  }
+  section.heart {
+    height: 58em;
+    .summary {
+      margin-top: -19em;
+      .text {
+        width: 22em;
+        padding-right: 1em;
+      }
+      .pics {
+        height: 30em;
+      }
+    }
+    .overlaypic {
+      height: 25em;
+      top: 45%;
+    }
+  }
+  section.passing {
+    .remarks {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .obi {
+        margin: 0;
+        margin-bottom: 5em;
+        padding: 1em;
+        .side-image {
+          height: 25em;
+        }
+      }
+    }
+  }
 }
+
+@media only screen and (min-width:768px) and (max-width: 1000px)  {
+  section.growingup {
+    height: 100em;
+    .layout {
+      .parallax {
+        padding: 1em;
+        width: 440px;
+        text-align: justify;
+      }
+    }
+    .oldpics {
+      // bot selfie
+      padding: 1em;
+      &.pic1 {
+        right: 8%;
+        top: 74em;
+        height: 22em;
+      }
+      // bot friend
+      &.pic2 {
+        left: 5%;
+        top: 64em;
+        height: 22em;
+        z-index: 50;
+      }
+      // mid france
+      &.pic3 {
+        left: 1%;
+        top: 30em;
+        height: 25em;
+      }
+      // top london
+      &.pic4 {
+        right: 5%;
+        left: auto;
+        top: 5em;
+        height: 26em;
+      }
+      // top JR
+      &.pic5 {
+        left: 3%;//8em;
+        top: 3em;
+        height: 24em;
+      }
+      // top highschool
+      &.pic6 {
+        left: 35%;//35em;
+        top: 15em;
+        height: 23em;
+      }
+      // mid eif
+      &.pic7 {
+        right: 2%;
+        top: 40em;
+        height: 30em;
+      }
+    }
+  }
+  section.america {
+    height: 90em;
+    .layout {
+      .part0 {
+        position: absolute;
+        left: 10%;
+        transform: translateX(6em);
+        .pics {
+          box-shadow: 0 0 2em #969696;
+          &.pic0 {
+            left: 26em;
+            height: 35em;
+            top: -39em;
+          }
+          &.pic1 {
+            left: -4.3em;
+            height: 23em;
+            top: -9em;
+          }
+          &.pic2 {
+            left: 16.5em;
+            height: 20em;
+            top: -4em;
+            z-index: 500;
+          }
+          &.pic3 {
+            left: -7em;
+            height: 20em;
+            top: 13.9em;
+          }
+        }
+      }
+      .part1 {
+        left: 13%;
+        top: -30em;
+        max-width: 30em;
+        width: 37%;
+      }
+      .part2 {
+        top: 19em;
+        right: 1em;
+        width: 30%;
+        left: auto;
+      }
+    }
+  }
+}
+
 // mobile
 @media only screen and (max-width: 768px){
+  .versetext {
+    width: 90%;
+    padding: 1em;
+  }
+  section.verseBreak {
+    padding: 2em 1em;
+    height: auto;
+    color: #fff;
+    background-color: #a179a9;
+    background: linear-gradient(to left, #42275a , #734b6d);
+    font-size: 1em;
+    line-height: 1.8em;
+  }
+  section.heart {
+    height: auto;
+    background: none;
+    background-color: #d9dfdf;
+    display: block;
+    padding: 0;
+    padding-bottom: 1em;
+    .overlaypic {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      height: auto;
+      width: 100%;
+      box-shadow: none;
+      padding: 1em;
+    }
+    .summary {
+      margin-top: 0;
+      .pics {
+        height: auto;
+        width: 100%;
+        padding: 1em;
+        box-shadow: none;
+      }
+      .text {
+        color: #000;
+        width: 100%;
+        padding-right: 0em;
+        padding: 2em 1em 1em;
+      }
+    }
+  }
+  section.passing {
+    height: auto;
+    padding: 2em 0;
+    .remarks {
+      flex-direction: column;
+      .obi {
+        margin-right: 0em;
+        display: flex;
+        justify-content: center;
+        .side-image {
+          height: 20em;
+        }
+      }
+    }
+    .excerpt {
+      width: 100%;
+      border:none;
+      padding: 2em 1em 0em;
+      font-size: 1.2em;
+      line-height: 1.8em;
+    }
+  }
+  section.america {
+    height: auto;
+    position: relative;
+    .layout {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .part0 {
+        order: 2;
+      }
+      .part1 {
+        order: 1;
+        position: relative;
+        background-color: #fff;
+        padding: 2em 1em 1em;
+        top: 0;
+        left: 0;
+        width: 100%;
+        font-size: 1.2em;
+        line-height: 1.8em;
+        font-family: 'Open Sans', serif;
+        .tagline {
+          font-size: 2em;
+          margin-bottom: .5em;
+        }
+      }
+      .part2 {
+        order: 3;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 2em 1em;
+        width: 100%;
+        font-size: 1.2em;
+        line-height: 1.8em;
+        font-family: 'Open Sans', serif;
+        .tagline {
+          font-size: 2em;
+          margin-bottom: .5em;
+        }
+      }
+      .pics {
+        position: inherit;
+        box-shadow: none;
+        &.pic0 {
+          height: auto;
+          width: 100%;
+          top: 0;
+          left: 0;
+          padding: 1em;
+        }
+        &.pic1 {
+          top: 0;
+          left: 0;
+          height: auto;
+          width: 100%;
+          padding: 1em;
+        }
+        &.pic2 {
+          top: 0;
+          left: 0;
+          height: auto;
+          width: 100%;
+          padding: 1em;
+        }
+        &.pic3 {
+          top: 0;
+          left: 0;
+          height: auto;
+          width: 100%;
+          padding: 1em;
+        }
+      }
+    }
+  }
   section.toheaven {
     padding: 0em;
   }
   section.toheaven {
-    height: auto;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -342,12 +799,16 @@ section.heart {
         .annotation {
           width: 100vw;
           margin-left: 0em;
+          .tagline {
+            font-size: 1.75em;
+            text-align: center;
+          }
         }
       }
     }
   }
   section.growingup {
-    height: 200em;
+    height: auto;
     .layout {
       position: relative;
       flex-direction: column-reverse;
@@ -373,6 +834,11 @@ section.heart {
       position: relative;
       width: 100%;
       height: auto;
+      box-shadow: none;
+      border-top: 1px solid #c0c0c0;
+      &:last-child {
+        border-bottom: 1px solid #c0c0c0;
+      }
       &.pic1 {
         left: 0;
         top: 0;
@@ -381,7 +847,7 @@ section.heart {
         transform: none;
       }
       &.pic2 {
-        left: 15%;
+        left: 0;
         top: 0;
         height: auto;
         width: 100%;
@@ -409,6 +875,13 @@ section.heart {
         transform: none;
       }
       &.pic6 {
+        left: 0;
+        top: 0;
+        height: auto;
+        width: 100%;
+        transform: none;
+      }
+      &.pic7 {
         left: 0;
         top: 0;
         height: auto;

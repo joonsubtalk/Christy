@@ -10,7 +10,8 @@ html {
 .versetext {
   font-size: 1.2em;
   line-height: 1.8em;
-  font-family: 'Open Sans', serif; }
+  font-family: 'Open Sans', serif;
+  width: 50%; }
 
 .verse {
   float: right;
@@ -74,11 +75,13 @@ section.toheaven {
         section.toheaven .sidebyside .description .annotation .tagline {
           font-size: 2em;
           margin-bottom: .5em; }
+        section.toheaven .sidebyside .description .annotation .versetext {
+          width: 100%; }
 
 section.growingup {
   background: #ededed;
   background-size: cover;
-  height: 130em; }
+  height: 120em; }
   section.growingup .layout {
     display: -ms-flexbox;
     display: flex;
@@ -114,24 +117,32 @@ section.growingup {
     padding: 2em;
     box-shadow: 0 0 1.2em #c5c5c5; }
     section.growingup .oldpics.pic1 {
-      right: 17%;
-      top: 90em;
-      height: 40em; }
+      right: 8%;
+      top: 84em;
+      height: 30em; }
     section.growingup .oldpics.pic2 {
-      left: 12%;
-      top: 90em;
-      height: 40em; }
-    section.growingup .oldpics.pic4 {
-      right: 2%;
-      top: 20em;
-      height: 60em; }
-    section.growingup .oldpics.pic5 {
       left: 15%;
-      top: 10em;
+      top: 75em;
+      height: 30em; }
+    section.growingup .oldpics.pic3 {
+      left: 2%;
+      top: 41em;
+      height: 30em; }
+    section.growingup .oldpics.pic4 {
+      left: 66%;
+      top: 6em;
+      height: 40em; }
+    section.growingup .oldpics.pic5 {
+      left: 4%;
+      top: 7em;
       height: 30em; }
     section.growingup .oldpics.pic6 {
-      left: 5%;
-      top: 55em;
+      left: 32%;
+      top: 15em;
+      height: 30em; }
+    section.growingup .oldpics.pic7 {
+      right: 2%;
+      top: 50em;
       height: 30em; }
 
 section.verseBreak {
@@ -145,6 +156,7 @@ section.verseBreak {
   height: 30em;
   color: #fff;
   background-color: #a179a9;
+  background: linear-gradient(to left, #42275a, #734b6d);
   font-size: 1.2em;
   line-height: 1.8em; }
 
@@ -245,56 +257,418 @@ section.bible {
     background-color: #ededed; }
 
 section.heart {
-  background-color: black;
-  color: white;
-  height: 75em;
+  background: url(../img/cloud3.jpg) no-repeat center center fixed;
+  color: #624c4c;
+  height: 95em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative; }
+  section.heart .overlaypic {
+    height: 35em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, 10%);
+    box-shadow: 0 0 3em 2px #9d9d96; }
   section.heart .summary {
-    height: 75em;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    margin-top: -25em; }
+    section.heart .summary .grid {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -ms-flex-direction: column;
+      flex-direction: column; }
     section.heart .summary .text {
-      width: 20em;
-      margin-right: 3em;
+      padding-right: 8em;
+      width: 30em;
       font-size: 1.2em;
       line-height: 1.8em;
       font-family: 'Open Sans', serif; }
       section.heart .summary .text .title {
         font-size: 2em;
         margin-bottom: .5em; }
-    section.heart .summary .bakeimg .pics {
-      height: 40em; }
-  section.heart .bottom {
-    position: absolute;
-    bottom: 0;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 100%; }
-    section.heart .bottom .support img {
-      height: 20em; }
+    section.heart .summary .pics {
+      height: 47em;
+      box-shadow: 0 0 3em 2px #9d9d96; }
 
-@media only screen and (min-width: 768px) and (max-width: 1330px) {
+section.cta {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #e2e6e7;
+  height: 12em; }
+  section.cta div.content {
+    border-left: solid 6px #6f8bae;
+    padding-left: 1em; }
+
+section.eulogy {
+  background: url(../img/background.jpg) no-repeat center center;
+  height: 80vh;
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  section.eulogy .text {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    font-family: 'Open Sans', serif;
+    background-color: #fff;
+    padding: 3em;
+    border-radius: 10px; }
+
+footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 4em;
+  color: #fff;
+  background-color: #2e2e2e; }
+
+@media only screen and (min-width: 768px) and (max-width: 1410px) {
+  section.verseBreak {
+    height: 20em; }
+    section.verseBreak .versetext {
+      width: 75%; }
   section.toheaven {
     height: 50em; }
     section.toheaven .sidebyside {
-      width: 100%; }
+      width: 100%;
+      padding: 2em; }
+      section.toheaven .sidebyside .description .annotation {
+        margin-left: 2em;
+        width: 61%; }
       section.toheaven .sidebyside .sideimage {
-        width: 80em;
-        height: 40em;
+        width: 97em;
+        height: 42em;
         background: url(../img/52.jpg) no-repeat center center;
-        background-size: cover; } }
+        background-size: cover; }
+  section.growingup {
+    height: 100em; }
+    section.growingup .layout .parallax {
+      padding: 1em;
+      width: 700px;
+      text-align: justify; }
+    section.growingup .oldpics {
+      padding: 1em; }
+      section.growingup .oldpics.pic1 {
+        right: 8%;
+        top: 70em;
+        height: 26em; }
+      section.growingup .oldpics.pic2 {
+        left: 5%;
+        top: 66em;
+        height: 26em;
+        z-index: 50; }
+      section.growingup .oldpics.pic3 {
+        left: 1%;
+        top: 40em;
+        height: 28em; }
+      section.growingup .oldpics.pic4 {
+        right: 5%;
+        left: auto;
+        top: 5em;
+        height: 30em; }
+      section.growingup .oldpics.pic5 {
+        left: 3%;
+        top: 3em;
+        height: 28em; }
+      section.growingup .oldpics.pic6 {
+        left: 35%;
+        top: 15em;
+        height: 28em; }
+      section.growingup .oldpics.pic7 {
+        right: 2%;
+        top: 40em;
+        height: 33em; }
+  section.america {
+    height: 90em; }
+    section.america .layout {
+      width: 940px; }
+      section.america .layout .part0 .pics {
+        box-shadow: 0 0 2em #969696; }
+        section.america .layout .part0 .pics.pic0 {
+          left: 43.6em;
+          height: 35em;
+          top: -39em; }
+        section.america .layout .part0 .pics.pic1 {
+          left: 39.7em;
+          height: 21.8em;
+          top: -4.1em; }
+        section.america .layout .part0 .pics.pic2 {
+          left: 4em;
+          height: 31em;
+          top: -13.3em; }
+        section.america .layout .part0 .pics.pic3 {
+          left: 4em;
+          height: 20em;
+          top: 17.7em;
+          z-index: 300; }
+      section.america .layout .part1 {
+        left: 14%;
+        top: -30em;
+        max-width: 30em;
+        width: 37%; }
+      section.america .layout .part2 {
+        top: 22em;
+        left: 36em;
+        width: 30%; }
+  section.heart {
+    height: 58em; }
+    section.heart .summary {
+      margin-top: -19em; }
+      section.heart .summary .text {
+        width: 22em;
+        padding-right: 1em; }
+      section.heart .summary .pics {
+        height: 30em; }
+    section.heart .overlaypic {
+      height: 25em;
+      top: 45%; }
+  section.passing .remarks {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    section.passing .remarks .obi {
+      margin: 0;
+      margin-bottom: 5em;
+      padding: 1em; }
+      section.passing .remarks .obi .side-image {
+        height: 25em; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  section.growingup {
+    height: 100em; }
+    section.growingup .layout .parallax {
+      padding: 1em;
+      width: 440px;
+      text-align: justify; }
+    section.growingup .oldpics {
+      padding: 1em; }
+      section.growingup .oldpics.pic1 {
+        right: 8%;
+        top: 74em;
+        height: 22em; }
+      section.growingup .oldpics.pic2 {
+        left: 5%;
+        top: 64em;
+        height: 22em;
+        z-index: 50; }
+      section.growingup .oldpics.pic3 {
+        left: 1%;
+        top: 30em;
+        height: 25em; }
+      section.growingup .oldpics.pic4 {
+        right: 5%;
+        left: auto;
+        top: 5em;
+        height: 26em; }
+      section.growingup .oldpics.pic5 {
+        left: 3%;
+        top: 3em;
+        height: 24em; }
+      section.growingup .oldpics.pic6 {
+        left: 35%;
+        top: 15em;
+        height: 23em; }
+      section.growingup .oldpics.pic7 {
+        right: 2%;
+        top: 40em;
+        height: 30em; }
+  section.america {
+    height: 90em; }
+    section.america .layout .part0 {
+      position: absolute;
+      left: 10%;
+      transform: translateX(6em); }
+      section.america .layout .part0 .pics {
+        box-shadow: 0 0 2em #969696; }
+        section.america .layout .part0 .pics.pic0 {
+          left: 26em;
+          height: 35em;
+          top: -39em; }
+        section.america .layout .part0 .pics.pic1 {
+          left: -4.3em;
+          height: 23em;
+          top: -9em; }
+        section.america .layout .part0 .pics.pic2 {
+          left: 16.5em;
+          height: 20em;
+          top: -4em;
+          z-index: 500; }
+        section.america .layout .part0 .pics.pic3 {
+          left: -7em;
+          height: 20em;
+          top: 13.9em; }
+    section.america .layout .part1 {
+      left: 13%;
+      top: -30em;
+      max-width: 30em;
+      width: 37%; }
+    section.america .layout .part2 {
+      top: 19em;
+      right: 1em;
+      width: 30%;
+      left: auto; } }
 
 @media only screen and (max-width: 768px) {
+  .versetext {
+    width: 90%;
+    padding: 1em; }
+  section.verseBreak {
+    padding: 2em 1em;
+    height: auto;
+    color: #fff;
+    background-color: #a179a9;
+    background: linear-gradient(to left, #42275a, #734b6d);
+    font-size: 1em;
+    line-height: 1.8em; }
+  section.heart {
+    height: auto;
+    background: none;
+    background-color: #d9dfdf;
+    display: block;
+    padding: 0;
+    padding-bottom: 1em; }
+    section.heart .overlaypic {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      height: auto;
+      width: 100%;
+      box-shadow: none;
+      padding: 1em; }
+    section.heart .summary {
+      margin-top: 0; }
+      section.heart .summary .pics {
+        height: auto;
+        width: 100%;
+        padding: 1em;
+        box-shadow: none; }
+      section.heart .summary .text {
+        color: #000;
+        width: 100%;
+        padding-right: 0em;
+        padding: 2em 1em 1em; }
+  section.passing {
+    height: auto;
+    padding: 2em 0; }
+    section.passing .remarks {
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      section.passing .remarks .obi {
+        margin-right: 0em;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        section.passing .remarks .obi .side-image {
+          height: 20em; }
+    section.passing .excerpt {
+      width: 100%;
+      border: none;
+      padding: 2em 1em 0em;
+      font-size: 1.2em;
+      line-height: 1.8em; }
+  section.america {
+    height: auto;
+    position: relative; }
+    section.america .layout {
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      section.america .layout .part0 {
+        -ms-flex-order: 2;
+        order: 2; }
+      section.america .layout .part1 {
+        -ms-flex-order: 1;
+        order: 1;
+        position: relative;
+        background-color: #fff;
+        padding: 2em 1em 1em;
+        top: 0;
+        left: 0;
+        width: 100%;
+        font-size: 1.2em;
+        line-height: 1.8em;
+        font-family: 'Open Sans', serif; }
+        section.america .layout .part1 .tagline {
+          font-size: 2em;
+          margin-bottom: .5em; }
+      section.america .layout .part2 {
+        -ms-flex-order: 3;
+        order: 3;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 2em 1em;
+        width: 100%;
+        font-size: 1.2em;
+        line-height: 1.8em;
+        font-family: 'Open Sans', serif; }
+        section.america .layout .part2 .tagline {
+          font-size: 2em;
+          margin-bottom: .5em; }
+      section.america .layout .pics {
+        position: inherit;
+        box-shadow: none; }
+        section.america .layout .pics.pic0 {
+          height: auto;
+          width: 100%;
+          top: 0;
+          left: 0;
+          padding: 1em; }
+        section.america .layout .pics.pic1 {
+          top: 0;
+          left: 0;
+          height: auto;
+          width: 100%;
+          padding: 1em; }
+        section.america .layout .pics.pic2 {
+          top: 0;
+          left: 0;
+          height: auto;
+          width: 100%;
+          padding: 1em; }
+        section.america .layout .pics.pic3 {
+          top: 0;
+          left: 0;
+          height: auto;
+          width: 100%;
+          padding: 1em; }
   section.toheaven {
     padding: 0em; }
   section.toheaven {
-    height: auto;
+    height: 100%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -317,8 +691,11 @@ section.heart {
         section.toheaven .sidebyside .description .annotation {
           width: 100vw;
           margin-left: 0em; }
+          section.toheaven .sidebyside .description .annotation .tagline {
+            font-size: 1.75em;
+            text-align: center; }
   section.growingup {
-    height: 200em; }
+    height: auto; }
     section.growingup .layout {
       position: relative;
       -ms-flex-direction: column-reverse;
@@ -341,7 +718,11 @@ section.heart {
     section.growingup .oldpics {
       position: relative;
       width: 100%;
-      height: auto; }
+      height: auto;
+      box-shadow: none;
+      border-top: 1px solid #c0c0c0; }
+      section.growingup .oldpics:last-child {
+        border-bottom: 1px solid #c0c0c0; }
       section.growingup .oldpics.pic1 {
         left: 0;
         top: 0;
@@ -349,7 +730,7 @@ section.heart {
         width: 100%;
         transform: none; }
       section.growingup .oldpics.pic2 {
-        left: 15%;
+        left: 0;
         top: 0;
         height: auto;
         width: 100%;
@@ -373,6 +754,12 @@ section.heart {
         width: 100%;
         transform: none; }
       section.growingup .oldpics.pic6 {
+        left: 0;
+        top: 0;
+        height: auto;
+        width: 100%;
+        transform: none; }
+      section.growingup .oldpics.pic7 {
         left: 0;
         top: 0;
         height: auto;
