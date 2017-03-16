@@ -676,20 +676,20 @@ footer {
     -ms-flex-align: center;
     align-items: center; }
     section.toheaven .sidebyside {
-      width: 100vw;
+      width: 100%;
       margin: 0 auto;
       display: block;
       -ms-flex-direction: column;
       flex-direction: column; }
       section.toheaven .sidebyside .sideimage {
         height: 30em;
-        width: 100vw;
+        width: 100%;
         background: url(../img/52.jpg) no-repeat center center;
         background-position-y: 25%; }
       section.toheaven .sidebyside .description {
         padding: 1em; }
         section.toheaven .sidebyside .description .annotation {
-          width: 100vw;
+          width: 100%;
           margin-left: 0em; }
           section.toheaven .sidebyside .description .annotation .tagline {
             font-size: 1.75em;

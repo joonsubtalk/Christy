@@ -784,20 +784,20 @@ footer {
     align-items: center;
 
     .sidebyside {
-      width: 100vw;
+      width: 100%;
       margin: 0 auto;
       display: block;
       flex-direction: column;
       .sideimage{
         height: 30em;
-        width: 100vw;
+        width: 100%;
         background: url(../img/52.jpg) no-repeat center center;
         background-position-y: 25%;
       }
       .description {
         padding: 1em;
         .annotation {
-          width: 100vw;
+          width: 100%;
           margin-left: 0em;
           .tagline {
             font-size: 1.75em;
